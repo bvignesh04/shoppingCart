@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    font-family: sans-serif;
+    
+    
+    
+    
+   
+}
+
+i{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* STYLE FOR CART.JS */
+
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Homebtn,.checkout,.removeAll{
+    background-color:#212529;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+
+.final-cart-details{
+    display:flex;
+    /* border:2px solid red; */
+    justify-content:center;
+    gap: 7px;
+    align-items: baseline;
+    
+     
+ }  
+
+.checkout{
+    background-color:green;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+   
+}
+/* 
+.totalbill{
+    border:2px solid red
+ } */
+
+.removeAll{
+    background-color:red;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    
+    
+   
+    
+} 
+
+
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1,320px);
+    justify-content: center;
+    gap: 15px;
+    
+    
+}
+
+.cart-parent-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cart-item{
+    border: 2px solid #212529;
+    border-radius: 4px;
+    display: flex;
+   
+}
+/* 
+.cart-wrapper{
+    display: flex;
+} */
+/* .cart-wrapper{
+    background-color: rgb(129, 158, 170);
+} */
+
+.title-price-x{
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; just for testing*/
+}
+
+.title-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.price{
+    background-color: #212529;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    font-size: 30px;
+   
+    
+  
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#212529;
+    color: white;
+    padding: 25px 60px;
+    
+     
+   
+   
+}
+
+.navigation{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    
+}
+.search{
+    font-size: 20px;
+    
+}
+
+.sale-wrapper1 {
+    /* background:black ; */
+    
+     display: flex;
+     justify-content:space-between;
+     margin-bottom: 5px;
+    
+}
+
+.sale-wrapper2{
+     /* display: grid;  */
+    /* grid-template-columns: repeat(6,150px); */
+    
+    /* gap: 10px; */
+    /* text-align: center; */
+    /* margin-left: -50px; */
+    
+    margin-bottom:20px;
+    
+}
+
+.sale-wrapper3{
+    margin-bottom: 20px;
+}
+
+.cart-sale-wrapper{
+     display: grid; 
+     text-align: center; 
+     margin-left: -120px;
+}
+
+.empty{
+    color: orange;
+}
+
+.criteria{
+    display: grid;
+    grid-template-columns: repeat(4,220px);
+    gap: 30px;
+    justify-content: center;
+    
+    margin-bottom: 50px;
+}
+
+.brand{
+
+    position: absolute;
+    left: 1%;
+   
+}
+
+.cart{
+    background-color: white;
+    color: #212529;
+    font-size: 30px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.cart-amount{
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top:-15px;
+    right: -10px;
+    padding: 3px;
+    border-radius: 3px;
+    
+}
+
+/* 
+SHOP */
+
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4,223px);
+    gap: 30px;
+    justify-content: center;
+   
+    
+    margin-bottom: 50px;
+}
+
+@media(max-width: 1000px){
+    .shop{
+        grid-template-columns: repeat(2,223px);
+    }
+}
+
+@media(max-width: 500px){
+    .shop{
+        grid-template-columns: repeat(1 ,223px);
+    }
+}
+
+.item{
+    border: 2px solid #212529;
+    border-radius: 4px;
+}
+
+.item img{
+    width: 100%;
+    border-radius: 2px 2px 0 0 ;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+   
+}
+
+.price-quantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 8px;
+    font-size: 16px;
+}
+
+ .bi-dash-lg{
+    color: red;
+ }
+
+ .bi-plus-lg{
+    color: green;
+ }
+
+ .bi-x-lg{
+    font-weight: bold;
+    color: red;
+ }
